@@ -130,45 +130,6 @@ header{
 .header-right div:not(:last-child){
     margin-right: 1rem;
 }
-/* search box  */
-.search-box{
-    width: auto;
-    position: relative;
-    font-size: var(--fs-regular);
-}
-.input-search {
-    width: 0;
-    position: absolute;
-    right: 0;
-    padding: .5rem 2rem;
-    border: 2px solid var(--border-color);
-    border-radius: 1rem;
-    font-size: var(--fs-regular);
-    color: var(--theme-color);
-    background-color: var(--search-bg);
-    transition: all 1s ease;
-    z-index: 1;
-}
-.search-box.active .input-search{
-    width: 400px;
-}
-
-.input-search::placeholder{
-    font-size: var(--fs-regular);
-}
-
-.search-icon {
-    position: absolute;
-    right: .75rem;
-    z-index: 2;
-    display: block;
-    line-height: 2.7rem;
-    font-size: var(--fs-medium);
-    text-align: center;
-    cursor: pointer;
-    color: #aaa;
-}
-
 /* header icon list  */
 .header-icons i{
     font-size: var(--fs-medium);
@@ -230,15 +191,6 @@ header{
 .mode-change-icon.active{
     color: var(--clr-yellow);
 }
-/* ============= mobile header section ============ */
-@media (max-width:768px) {
-    /* header section  */
-    .search-box.active .input-search{
-        width: 200px;
-    }
-}
-
-
 /* ============= hero section ============ */
 .hero-section{
     border: none;
