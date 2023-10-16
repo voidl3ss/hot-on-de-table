@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+    <title>Your Order | Hot On De Table</title>
+    <!-- scroll reveal cdn  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- box icon cdn  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="yourOrder.css">
+</head>
+<body>
+
+    <!-- ================= header section ================ -->
+    <header class="section flex">
+        <!-- header left section  -->
+        <div class="header-left">
+            <!-- header logo  -->
+            <div class="header-logo" style="cursor: pointer" onclick="navigateTo('/1-home/index.html')">
+                <img src="/img/logo.png" alt="Hot On De Table">
+                <h1>Hot On De Table</h1>
+            </div>
+        </div>
+
+        <div class="header-right flex">
+            <!-- header search box  -->
+            <div class="search-box flex">
+                <i class='bx bx-search search-icon'></i>
+                <input type="text" class="input-search" placeholder="search">
+            </div>
+
+            <!-- header icons  -->
+            <div class="header-icons">
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <!-- header menu -->
+            <div class="header-menu">
+                <i class='bx bx-menu-alt-right menu-icon' ></i>
+                <!-- menu  -->
+                <ul class="menu flex">
+                    <li class="nav-item" onclick="navigateTo('/1-home/index.html')">
+                        <i class='bx bxs-home'></i>
+                        <span>HOME</span>
+                    </li>
+                    <li class="nav-item" onclick="navigateTo('/2-yourOrder/yourOrder.html')">
+                        <i class='bx bxs-shopping-bag' ></i>                      
+                        <span>YOUR ORDER</span>
+                    </li>
+                    <li class="nav-item" onclick="navigateTo('/3-about/about.html')">
+                        <i class='bx bxs-info-circle' ></i>
+                        <span>ABOUT US</span>
+                    </li>
+                    <li class="nav-item" onclick="navigateTo('/4-contact/contact.html')">
+                        <i class='bx bxs-contact' ></i>
+                        <span>CONTACT US</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- mode change icon  -->
+            <div class="mode-change">
+                <i class='bx bx-moon mode-change-icon' ></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="checkoutLayout">
+    
+            
+            <div class="returnCart">
+                <div class="yourMenu">
+                    <h1>Your Order:</h1>
+                </div>
+                <div class="list">
+
+                    <div class="item-1" data-item="item1">
+                        <div class="info">
+                            <div class="name">Doubles</div>
+                            <div class="price">$8.00</div>
+                        </div>
+                        <div class="quantity">
+                            <i class='bx bxs-minus-circle minus' style="cursor: pointer"></i>                      
+                            <span class="quantity-display">0</span>
+                            <i class='bx bxs-plus-circle plus' style="cursor: pointer"></i> 
+                        </div>
+                        <div class="returnPrice1 pricePer">$0.00</div>
+                    </div>
+
+                    <div class="item-2" data-item="item2">
+                        <div class="info">
+                            <div class="name">Chicken Roti</div>
+                            <div class="price">$15.00</div>
+                        </div>
+                        <div class="quantity">
+                            <i class='bx bxs-minus-circle minus' style="cursor: pointer"></i>                      
+                            <span class="quantity-display">0</span>
+                            <i class='bx bxs-plus-circle plus' style="cursor: pointer"></i> 
+                        </div>
+                        <div class="returnPrice2 pricePer">$0.00</div>
+                    </div>
+
+                    <div class="item-3" data-item="item3">
+                        <div class="info">
+                            <div class="name">Pelau</div>
+                            <div class="price">$35.00</div>
+                        </div>
+                        <div class="quantity">
+                            <i class='bx bxs-minus-circle minus' style="cursor: pointer"></i>                      
+                            <span class="quantity-display">0</span>
+                            <i class='bx bxs-plus-circle plus' style="cursor: pointer"></i> 
+                        </div>
+                        <div class="returnPrice3 pricePer">$0.00</div>
+                    </div>
+
+                    <div class="item-4" data-item="item4">
+                        <div class="info">
+                            <div class="name">Bake & Shark</div>
+                            <div class="price">$40.00</div>
+                        </div>
+                        <div class="quantity">
+                            <i class='bx bxs-minus-circle minus' style="cursor: pointer"></i>                      
+                            <span class="quantity-display">0</span>
+                            <i class='bx bxs-plus-circle plus' style="cursor: pointer"></i> 
+                        </div>
+                        <div class="returnPrice4 pricePer">$0.00</div>
+                    </div>
+    
+                </div>
+            </div>
+    
+    
+            <div class="right">
+                <h1>Checkout</h1>
+    
+                <div class="form">
+                    <div class="group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+        
+                    <div class="group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+        
+                    <div class="group">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+        
+                    <div class="group">
+                        <label for="country">Area:</label>
+                        <select name="country" id="country">
+                            <option value="">Choose...</option>
+                            <option value="">Arima</option>
+                            <option value="">Chaguanas</option>
+                            <option value="">Couva-Tabaquite-Talparo</option>
+                            <option value="">Diego Martin</option>
+                            <option value="">Mayaro-Rio Claro</option>
+                            <option value="">Penal-Debe</option>
+                            <option value="">Point Fortin</option>
+                            <option value="">Port of Spain</option>
+                            <option value="">Princes Town</option>
+                            <option value="">San Fernando</option>
+                            <option value="">San Juan-Laventille</option>
+                            <option value="">Sangre Grande</option>
+                            <option value="">Siparia</option>
+                            <option value="">Tunapuna-Piarco</option>
+                        </select>
+                    </div>
+        
+                    <div class="group">
+                        <label for="city">Delivery/Pickup:</label>
+                        <select name="city" id="city">
+                            <option value="">Choose...</option>
+                            <option value="">Delivery</option>
+                            <option value="">Pickup</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="return">
+                    <div class="row">
+                        <div>Total Quantity:</div>
+                        <div class="totalQuantity">0</div>
+                    </div>
+                    <div class="row">
+                        <div>Total Price:</div>
+                        <div class="totalCost">$0.00</div>
+                    </div>
+                </div>
+                <button class="buttonCheckout" style="cursor: pointer">CHECKOUT</button>
+                </div>
+        </div>
+    </div>
+    
+    <!-- custom js file  -->
+    <script src="yourOrder.js"></script>
+</body>
+</html>
