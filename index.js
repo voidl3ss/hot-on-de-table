@@ -32,7 +32,7 @@ const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
 
 addToCartButtons.forEach(button  => {
     button.addEventListener('click' , () => {
-        window.location.href = "/2-yourOrder/yourOrder.html";
+        window.location.href = "yourOrder.html";
     });
 })
 
