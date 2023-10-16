@@ -1,12 +1,3 @@
-// mobile search box 
-const searchIcon = document.querySelector('.search-icon');
-const searchBox = document.querySelector('.search-box');
-
-searchIcon.addEventListener('click', () => {
-    console.log('hello world');
-    searchBox.classList.toggle('active')
-})
-
 // header menu 
 const menuIcon = document.querySelector('.menu-icon');
 const menu = document.querySelector('.menu');
