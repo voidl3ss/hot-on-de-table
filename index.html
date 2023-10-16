@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+    <title>Home | Hot On De Table</title>
+    <!-- scroll reveal cdn  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- box icon cdn  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- ================= header section ================ -->
+    <header class="section flex">
+        <!-- header left section  -->
+        <div class="header-left">
+            <!-- header logo  -->
+            <div class="header-logo" style="cursor: pointer" onclick="navigateTo('/1-home/index.html')">
+                <img src="/img/logo.png" alt="Hot On De Table">
+                <h1>Hot On De Table</h1>
+            </div>
+        </div>
+
+        <div class="header-right flex">
+            <!-- header search box  -->
+            <div class="search-box flex">
+                <i class='bx bx-search search-icon'></i>
+                <input type="text" class="input-search" placeholder="search">
+            </div>
+
+            <!-- header icons  -->
+            <div class="header-icons">
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <!-- header menu -->
+            <div class="header-menu">
+                <i class='bx bx-menu-alt-right menu-icon' ></i>
+                <!-- menu  -->
+                <ul class="menu flex">
+                    <li class="nav-item" onclick="navigateTo('/1-home/index.html')">
+                        <i class='bx bxs-home'></i>
+                        <span>HOME</span>
+                    </li>
+                    <li class="nav-item" onclick="navigateTo('/2-yourOrder/yourOrder.html')">
+                        <i class='bx bxs-shopping-bag' ></i>                      
+                        <span>YOUR ORDER</span>
+                    </li>
+                    <li class="nav-item" onclick="navigateTo('/3-about/about.html')">
+                        <i class='bx bxs-info-circle' ></i>
+                        <span>ABOUT US</span>
+                    </li>
+                    <li class="nav-item" onclick="navigateTo('/4-contact/contact.html')">
+                        <i class='bx bxs-contact' ></i>
+                        <span>CONTACT US</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- mode change icon  -->
+            <div class="mode-change">
+                <i class='bx bx-moon mode-change-icon' ></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= hero section ================ -->
+    <div class="hero-section section flex">
+        <div class="hero-content flex">
+            <h1 class="content-header">
+                "<span>Hot On De Table:</span> Where Flavour Meets Fast!"
+            </h1>
+            <h3 class="content-description">
+                Discover the taste of the islands at Hot On De Table, and experience the vibrant culture and delicious cuisine that Trinidad and Tobago have to offer.
+            </h3>
+            <button class="btn content-btn flex" style="cursor: pointer" onclick="navigateTo('/2-yourOrder/yourOrder.html')">
+                <span>Order Now</span>
+                <i class='bx bx-right-arrow-alt order-icon'></i>
+            </button>
+        </div>
+        <div class="hero-img">
+            <img src="/img/hero-img.png" alt="">
+        </div>
+
+
+    </div>
+
+    <!-- ================= products section ================ -->
+    <div class="product-section section grid">
+        <div class="product-card card-1">
+            <div class="card-img">
+                <img src="/img/card-1.jpg" alt="">
+            </div>
+            <div class="card-info flex">
+                <div class="card-header flex">
+                    <h1 class="product-name">
+                        Doubles
+                    </h1>
+                    <p class="product-price">
+                        $8.00
+                    </p>
+                </div>
+                <p class="product-description">
+                    Experience the perfect harmony of soft, fried dough filled with spicy chickpea curry.
+                </p>
+                <button class="btn add-to-cart-btn flex" style="cursor: pointer">
+                    <i class='bx bx-cart-alt'></i>
+                    Place Order
+                </button>
+            </div>
+        </div>
+        <div class="product-card card-2">
+            <div class="card-img">
+                <img src="/img/card-2.jpg" alt="">
+            </div>
+            <div class="card-info flex">
+                <div class="card-header flex">
+                    <h1 class="product-name">
+                        Chicken Roti
+                    </h1>
+                    <p class="product-price">
+                        $15.00
+                    </p>
+                </div>
+                <p class="product-description">
+                    Savor the rich and spicy delight of tender chicken wrapped in warm, flaky roti.
+                </p>
+                <button class="btn add-to-cart-btn flex" style="cursor: pointer">
+                    <i class='bx bx-cart-alt'></i>
+                    Place Order
+                </button>
+            </div>
+        </div>
+        <div class="product-card card-3">
+            <div class="card-img">
+                <img src="/img/card-3.jpg" alt="">
+            </div>
+            <div class="card-info flex">
+                <div class="card-header flex">
+                    <h1 class="product-name">
+                        Pelau
+                    </h1>
+                    <p class="product-price">
+                        $35.00
+                    </p>
+                </div>
+                <p class="product-description">
+                    Indulge in the aromatic blend of tender meat, rice, and vibrant spices in our Trinbagonian Pelau.
+                </p>
+                <button class="btn add-to-cart-btn  flex" style="cursor: pointer">
+                    <i class='bx bx-cart-alt'></i>
+                    Place Order
+                </button>
+            </div>
+        </div>
+        <div class="product-card card-4">
+            <div class="card-img">
+                <img src="/img/card-4.jpeg" alt="">
+            </div>
+            <div class="card-info flex">
+                <div class="card-header flex">
+                    <h1 class="product-name">
+                        Bake & Shark
+                    </h1>
+                    <p class="product-price">
+                        $40.00
+                    </p>
+                </div>
+                <p class="product-description">
+                    Dive into the seaside flavors of crispy fried shark tucked into a warm bake.
+                </p>
+                <button class="btn add-to-cart-btn flex" style="cursor: pointer">
+                    <i class='bx bx-cart-alt'></i>
+                    Place Order
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+</body>
+</html>
