@@ -20,7 +20,7 @@ function navigateTo(url) {
 
 // minus/plus button
 const items = {
-    item1: { quantity: 0, pricePer: 8 },
+    item1: { quantity: 0, pricePer: 6 },
     item2: { quantity: 0, pricePer: 15 },
     item3: { quantity: 0, pricePer: 35 },
     item4: { quantity: 0, pricePer: 40 }
