@@ -367,6 +367,7 @@ header{
     .returnCart h1 {
         border-top: 1px solid #eee;
         padding: 10px 0;
+        margin-left: 0%;
     }
 
     .returnCart .item-1,
@@ -387,24 +388,39 @@ header{
     }
 
     .returnCart .item-1 .name,
-    .returnCart .item-1 .returnPrice1,
     .returnCart .item-2 .name,
-    .returnCart .item-2 .returnPrice2,
     .returnCart .item-3 .name,
-    .returnCart .item-3 .returnPrice3,
-    .returnCart .item-4 .name,
-    .returnCart .item-4 .returnPrice4 {
-        font-size: 1.4rem; /* Adjust font size for mobile readability */
+    .returnCart .item-4 .name {
+        font-size: 1.2rem; /* Adjust font size for mobile readability */
         font-weight: bold;
         color: var(--hero-color);
-        margin-left: 7%;
+        margin-left: 0%;
     }
 
-    .returnCart .item-1 .price,
-    .returnCart .item-2 .price,
-    .returnCart .item-3 .price,
+    .returnCart .item-1 .returnPrice1,
+    .returnCart .item-2 .returnPrice2,
+    .returnCart .item-3 .returnPrice3,
+    .returnCart .item-4 .returnPrice4 {
+        font-size: 1.2rem; /* Adjust font size for mobile readability */
+        font-weight: bold;
+        color: var(--hero-color);
+        margin-left: 0%;
+    }
+
+    .returnCart .item-1 .price{
+        margin-left: 22%;
+    }
+
+    .returnCart .item-2 .price{
+        margin-left: 30%;
+    }
+
+    .returnCart .item-3 .price{
+        margin-left: 0%;
+    }
+
     .returnCart .item-4 .price{
-        margin-left: 7%;
+        margin-left: 29%;
     }
 }
 
