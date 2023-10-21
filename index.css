@@ -369,6 +369,10 @@ header{
     .product-card{
         height: 350px;
         width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .card-img img{
         width: 100%;
