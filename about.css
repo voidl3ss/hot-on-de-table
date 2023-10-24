@@ -219,7 +219,7 @@ header{
     color: var(--clr-light-red);
 }
 .content-description{
-    font-size: var(--fs-medium);
+    font-size: var(--fs-regular);
     font-weight: var(--fw-medium);
     color: var(--hero-color);
 }
