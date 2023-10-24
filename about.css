@@ -115,7 +115,7 @@ body{
     color: var(--theme-color);
     cursor: pointer;
 }
-header{
+.header{
     height: auto;
     width: 100%;
 }
@@ -219,7 +219,7 @@ header{
     color: var(--clr-light-red);
 }
 .content-description{
-    font-size: var(--fs-regular);
+    font-size: var(--fs-medium);
     font-weight: var(--fw-medium);
     color: var(--hero-color);
 }
