@@ -115,7 +115,7 @@ body{
     color: var(--theme-color);
     cursor: pointer;
 }
-.header{
+header{
     height: auto;
     width: 100%;
 }
